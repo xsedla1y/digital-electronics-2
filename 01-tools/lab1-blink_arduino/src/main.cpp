@@ -11,7 +11,9 @@
 
 
 /* Defines -----------------------------------------------------------*/
-#define LED_GREEN PB5   // PB5 is AVR pin where green on-board LED 
+#define LED_GREEN PB5
+#define LED_RED PB0    // PB5 is AVR pin where green on-board LED 
+                       // PB0 is AVR pin where red on-board LED 
                         // is connected
 #define SHORT_DELAY 250 // Delay in milliseconds
 #define DELAY 500
@@ -30,6 +32,7 @@
 // names. We are using Arduino-style just to simplify the first lab.
 #include "Arduino.h"
 #define PB5 13          // In Arduino world, PB5 is called "13"
+#define PB0 8 
 // -----
 
 
@@ -64,6 +67,7 @@ int main(void)
         led_value = LOW;
         digitalWrite(LED_GREEN, led_value);
         _delay_ms(DELAY);
+        _delay_ms(LONG_DELAY);
 
     }
 

@@ -1,4 +1,4 @@
-# Lab 1: YOUR_FIRSTNAME LASTNAME
+# Lab 1: Ondřej Sedlák
 
 ### Morse code
 
@@ -12,10 +12,10 @@ int main(void)
     // Set pin where on-board LED is connected as output
     pinMode(LED_GREEN, OUTPUT);
 
-    // Infinite loop
+    // Infinite loop - A letter to morse code
 
     /// PREDEFINED ///
-    // #define SHORT_DELAY 250 // Delay in milliseconds
+    //#define SHORT_DELAY 250 // Delay in milliseconds
     //#define DELAY 500
     //#define LONG_DELAY 1000
 
@@ -36,6 +36,7 @@ int main(void)
         led_value = LOW;
         digitalWrite(LED_GREEN, led_value);
         _delay_ms(DELAY);
+        _delay_ms(LONG_DELAY);
 
     }
 
