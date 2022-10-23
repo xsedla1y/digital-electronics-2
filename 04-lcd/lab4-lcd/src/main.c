@@ -19,8 +19,8 @@
  *     D3:0 - NC (Data bits 3..0, Not Connected)
  *     D4   - PD4 (Data bit 4)
  *     D5   - PD5 (Data bit 5)
- *     D6   - PD6 (Data bit 3)
- *     D7   - PD7 (Data bit 2)
+ *     D6   - PD6 (Data bit 6)
+ *     D7   - PD7 (Data bit 7)
  *     A+K  - Back-light enabled/disabled by PB2
  * 
  **********************************************************************/
@@ -44,12 +44,11 @@
 int main(void)
 {
     // Initialize display
-    lcd_init(LCD_DISP_ON_CURSOR_BLINK);
+    lcd_init(LCD_DISP_ON_CURSOR);
 
     // Put string(s) on LCD screen
-    lcd_gotoxy(0, 1);
-    lcd_puts("Josef stinks");
-    lcd_putc('!');
+    lcd_gotoxy(1, 0);
+    lcd_puts("00:00.0");
 
     // Configuration of 8-bit Timer/Counter2 for Stopwatch update
     // Set the overflow prescaler to 16 ms and enable interrupt
@@ -70,39 +69,6 @@ int main(void)
     return 0;
 }
 
-/* Variables ---------------------------------------------------------*/
-// Custom character definition using https://omerk.github.io/lcdchargen/
-uint8_t customChar[] = {
-    // addr 0: .....
-    0b00000, 0b00000, 0b00000, 0b00000, 0b00000, 0b00000, 0b00000, 0b00000,
-    // addr 1: |....
-    0b10000, 0b10000, 0b10000, 0b10000, 0b10000, 0b10000, 0b10000, 0b10000,
-    // addr 2: |....
-    0b11000, 0b11000, 0b11000, 0b11000, 0b11000, 0b11000, 0b11000, 0b11000,
-    // addr 3: |....
-    0b11100, 0b11100, 0b11100, 0b11100, 0b11100, 0b11100, 0b11100, 0b11100,
-    // addr 4: |....
-    0b11110, 0b11110, 0b11110, 0b11110, 0b11110, 0b11110, 0b11110, 0b11110,
-    // addr 5: |....
-    0b11111, 0b11111, 0b11111, 0b11111, 0b11111, 0b11111, 0b11111, 0b11111
-};
-/*--------------------------------------------------------------------*/
-/**
- * ISR starts when Timer/Counter0 overflows. Update the progress bar on
- * LCD display every 16 ms.
- */
-ISR(TIMER0_OVF_vect)
-{
-    static uint8_t symbol = 0;
-    static uint8_t position = 0;
-
-    lcd_gotoxy(1 + position, 1);
-    lcd_putc(symbol);
-
-    // WRITE YOUR CODE HERE
-}
-
-
 
 /* Interrupt service routines ----------------------------------------*/
 /**********************************************************************
@@ -114,72 +80,54 @@ ISR(TIMER2_OVF_vect)
 {
     static uint8_t no_of_overflows = 0;
     static uint8_t tenths = 0;  // Tenths of a second
-    static uint8_t seconds = 0;
-    static uint8_t seconds_2 = 0;
-    static uint8_t minutes = 0;
-    static uint8_t minutes_2 = 0;
-
-    char string1[2];             // String for converted numbers by itoa()
-    string1 == 0;
-    char string2[2];
-    string2 == 0;
-    char string3[2];
-    string3 == 0;
-    char string4[2];
-    string4 == 0;
-    char string5[2];
-    string5 == 0;
-    char stringA[2];
+    static uint8_t secs = 0;
+    static uint8_t min = 0;
+    char string[2];             // String for converted numbers by itoa()
 
     no_of_overflows++;
     if (no_of_overflows >= 6)
     {
-        // Do this every 6 x 16 ms = 100 ms
-        no_of_overflows = 0;
-        tenths++;
-        
-        // Count tenth of seconds 0, 1, ..., 9, 0, 1, ...
-        if(tenths > 9)
-        {
-          tenths = 0;
-          seconds++;
-          if(seconds > 9){
-            seconds = 0;
-            seconds_2++;
-            if(seconds_2 > 5){
-              seconds_2 = 0;
-              minutes++;
-              if(minutes > 9){
-                minutes = 0;
-                minutes_2++;
-              }
-            }
-          }
-        }
+      // Do this every 6 x 16 ms = 100 ms
+      no_of_overflows = 0;
+      // Count tenth of seconds 0, 1, ..., 9, 0, 1, ...
+      tenths++;
 
-        itoa(tenths, string1, 10);  // Convert decimal value to string
-        itoa(seconds, string2, 10);
-        itoa(seconds_2, string3, 10);
-        itoa(minutes, string4, 10);
-        itoa(minutes_2, string5, 10);
-        itoa(pow((seconds_2*10 + seconds), 2), stringA, 10);
-        // Display "00:00.tenths"
-        lcd_gotoxy(1, 0);
-        lcd_puts(string5);
-        lcd_gotoxy(2, 0);
-        lcd_puts(string4);
-        lcd_puts(":");
-        lcd_gotoxy(4, 0);
-        lcd_puts(string3);
-        lcd_gotoxy(5, 0);
-        lcd_puts(string2);
-        lcd_puts(".");
-        lcd_gotoxy(7, 0);
-        lcd_puts(string1);
-        lcd_gotoxy(10,0);
-        lcd_puts(stringA);
+      if (tenths > 9)
+      {
+        tenths = 0;
+
+          secs++;
+          if (secs>59)
+          {
+            secs = 0;
+            min++;
+          
+            if (min>59)
+            {
+              min = 0;
+            }
+          //Podmínka pro jednotky min
+            itoa(min, string, 10);
+            lcd_gotoxy(1,0);
+            if (min<10)
+            {
+              lcd_putc('0');
+            }
+            lcd_puts(string);
+          }
+          //Podmínka pro jednotky secs
+          itoa(secs, string, 10);
+          lcd_gotoxy(4,0);
+          if (secs<10)
+          {
+            lcd_putc('0');
+          }
+          lcd_puts(string);
+      } 
+
+      itoa(tenths, string, 10);  // Convert decimal value to string
+      lcd_gotoxy(7, 0);
+      lcd_puts(string);
     }
     // Else do nothing and exit the ISR
 }
-
-
