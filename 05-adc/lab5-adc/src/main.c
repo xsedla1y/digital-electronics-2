@@ -134,19 +134,18 @@ ISR(ADC_vect)
     // down: 257
     // up: 100
     // right: 0
-    itoa(value, value2, 10);
     lcd_gotoxy(8, 1);
     lcd_puts("      ");
     lcd_gotoxy(8, 1);
-    if (value2 > 830)
+    if (string > 830)
         lcd_puts("none");
-    else if (value2 > 520)
+    else if (string > 520)
         lcd_puts("Select");
-    else if (value2 > 330)
+    else if (string > 330)
         lcd_puts("Left");
-    else if (value2 > 180)
+    else if (string > 180)
         lcd_puts("Down");
-    else if (value2 > 50)
+    else if (string > 50)
         lcd_puts("Up");
     else
       lcd_puts("Down");
