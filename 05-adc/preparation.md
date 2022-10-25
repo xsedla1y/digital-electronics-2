@@ -26,8 +26,7 @@
    | Voltage reference    | ADMUX | REFS1:0 | 00: AREF, Internal Vref turned off, 01: AVcc voltage reference (5V), 10: Reserved, 11: Internal 1.1V Voltage Reference with external capacitor at AREF pin |
    | Input channel        | ADMUX | MUX3:0 | 0000: ADC0, 0001: ADC1, 0010: ADC2, 0011: ADC3, 0100: ADC4, 0101: ADC5, 0110: ADC6, 0111: ADC7, 1000: ADC8 |
    | ADC enable           | ADCSRA |  |  |
-   | Start conversion     | ADCSRA | ADSC bit6 | Single Conversion mode: write this bit to one to start each conversion. Free Running mode: write this bit to one to start the first conversion. The first conversion after ADSC has been written after the ADC has been enabled, or if ADSC is written at the same time as the ADC is enabled, will take 25 ADC clock cycles instead of the normal 13. This first conversion performs initialization of the ADC.
-ADSC will read as one as long as a conversion is in progress. When the conversion is complete, it returns to zero. Writing zero to this bit has no effect. |
+   | Start conversion     | ADCSRA | ADSC bit6 | Single Conversion mode: start each conversion. Free Running mode: start the first conversion. ADSC will read as one as long as a conversion is in progress. When the conversion is complete, it returns to zero. Writing zero to this bit has no effect. |
    | ADC interrupt enable | ADCSRA |  | When this bit is written to one and the I-bit in SREG is set, the ADC Conversion Complete Interrupt is activated. |
    | ADC clock prescaler  | ADCSRA | ADPS2:0 | 000: Division factor 2, 001:2, 010:4, 011:8, 100:16, 101:32, 110:64, 111:128|
    | ADC 10-bit result    |  |  |  |
