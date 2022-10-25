@@ -29,4 +29,4 @@
    | Start conversion     | ADCSRA | ADSC bit6 | Single Conversion mode: start each conversion. Free Running mode: start the first conversion. ADSC will read as 1 as long as a conversion is in progress. When the conversion is complete, it returns to 0. Writing 0 to this bit has no effect. |
    | ADC interrupt enable | ADCSRA | ADIE bit3 | When this bit is written to 1 and the I-bit in SREG is set, the ADC Conversion Complete Interrupt is activated. |
    | ADC clock prescaler  | ADCSRA | ADPS2:0 | 000: Division factor 2, 001:2, 010:4, 011:8, 100:16, 101:32, 110:64, 111:128|
-   | ADC 10-bit result    |  |  |  |
+   | ADC 10-bit result    | ADLAR1:0 | ADC9:0 (H/L) |  |
