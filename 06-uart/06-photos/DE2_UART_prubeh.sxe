@@ -1,0 +1,198 @@
+<document type="ProfiCAD sxe" version="12">
+<fonts letter="155,0,0,0,Lucida Sans Unicode,000000" text="110,0,0,0,Lucida Sans Unicode,000000" type="85,0,0,0,Arial,FF00FF" refs="85,0,0,0,Arial,008000" wire_names="85,0,0,0,Arial,000000" cross_refs="85,0,0,1,Arial,0000FF" outlets="85,0,0,0,Arial,000000" reports="85,0,0,0,Arial,000000"/>
+<PrintSettings PrinterName="" PaperSize="9" FormName="A4" SheetSizeX="210" SheetSizeY="297" WantsCustom="0" CustomSizeX="283" CustomSizeY="203"/>
+<PrintReportSettings paper_size_enum="9" sheet_size_x="210" sheet_size_y="297" color_bg_even="15727333" color_bg_header="8454143" color_grid="16777215"/>
+<PrinterSettings PaperSizeX="4199" PaperSizeY="2970" PhysicalOffestTenthMm_X="0" PhysicalOffestTenthMm_Y="0"/>
+<tb use="1" name="C:\Users\Public\Documents\ProfiCAD Library\_TB\standard9.ptb"/>
+<PageSettings bgColor="FFFFFF" zoom="75" frame="YES" showT="YES" showV="YES" includeMargins="YES"/>
+<RefGridSettings FieldSize="50"/>
+<NumberingWire Over="1" Digits="3" TypeRenumbering="0" ShowWireName="0" WireLabelDist_a="4" WireLabelDist_b="10" WireLabelDist_c="7"/>
+<summary>
+<field name="author" value=""/>
+<field name="cisloDok" value=""/>
+<field name="date" value="05.11.2022"/>
+<field name="druhDokumentu" value=""/>
+<field name="jazyk" value=""/>
+<field name="odd" value=""/>
+<field name="prezkousel" value=""/>
+<field name="statusDokumentu" value=""/>
+<field name="techRef" value=""/>
+<field name="zmena" value=""/>
+</summary>
+<repo>
+<DimStyle name="strojírenské" arrow="0" flel="0" off_ori="6" lbl_pos="1" align_text="0" f="110,0,0,0,Arial,800080" unit="0" num-digits="2" suppress-zeros="0">
+<DimLine op-lw="1" op-lc="8388608"/>
+<ExtLine op-lw="1" op-lc="32768"/>
+</DimStyle>
+</repo>
+<pages current="0">
+<page name="1" dim_style_name="strojírenské">
+<PageSizeSettings paper_size_enum="9" sheet_size_x="297" sheet_size_y="210" source="0"/>
+<PagePrintSettings paper_size_enum="8" sheet_size_x="420" sheet_size_y="297"/>
+<tb use="1"/>
+<summary>
+<field name="_du" value="mm"/>
+<field name="_pa" value="1"/>
+<field name="_pcs" value=""/>
+<field name="_pcsc" value=""/>
+<field name="_po" value="1"/>
+<field name="_potb" value="1"/>
+<field name="_sc" value=""/>
+<field name="nazev" value=""/>
+<field name="nazevDopln" value=""/>
+</summary>
+<layers current="0">
+<layer name="0" v="1">
+<polyline op-line-scale="1.500" pts="200,600,400,600,"/>
+<polyline op-line-scale="1.500" pts="400,600,400,700,"/>
+<polyline op-line-scale="1.500" pts="700,700,400,700,"/>
+<polyline op-line-scale="1.500" pts="700,700,700,600,"/>
+<polyline op-line-scale="1.500" pts="700,600,800,600,"/>
+<polyline op-line-scale="1.500" pts="800,600,800,700,"/>
+<polyline op-line-scale="1.500" pts="1100,700,800,700,"/>
+<polyline op-line-scale="1.500" pts="1100,700,1100,600,"/>
+<polyline op-line-scale="1.500" pts="1100,600,1500,600,"/>
+<polyline op-line-scale="1.500" pts="1500,600,1500,700,"/>
+<polyline op-line-scale="1.500" pts="1600,700,1500,700,"/>
+<polyline op-line-scale="1.500" pts="1600,700,1600,600,"/>
+<polyline op-line-scale="1.500" pts="1600,600,1700,600,"/>
+<polyline op-line-scale="1.500" pts="1700,600,1700,700,"/>
+<polyline op-line-scale="1.500" pts="1700,700,1800,700,"/>
+<polyline op-line-scale="1.500" pts="1800,700,1800,600,"/>
+<polyline op-line-scale="1.500" pts="1900,600,1900,700,"/>
+<polyline op-line-scale="1.500" pts="1900,600,1800,600,"/>
+<polyline op-line-scale="1.500" pts="2100,700,1900,700,"/>
+<polyline op-line-scale="1.500" pts="2100,600,2100,700,"/>
+<polyline op-line-scale="1.500" pts="2100,600,2600,600,"/>
+<polyline op-line-scale="1.500" pts="2600,600,2600,700,"/>
+<polyline op-line-scale="1.500" pts="2600,700,2800,700,"/>
+<polyline op-line-scale="1.500" pts="2800,600,2800,700,"/>
+<polyline op-line-scale="1.500" pts="2900,600,2800,600,"/>
+<polyline op-line-scale="1.500" pts="2900,700,2900,600,"/>
+<polyline op-line-scale="1.500" pts="3100,700,2900,700,"/>
+<polyline op-line-scale="1.500" pts="3100,600,3100,700,"/>
+<polyline op-line-scale="1.500" pts="3300,600,3100,600,"/>
+<polyline op-line-scale="1.500" pts="3300,700,3300,600,"/>
+<polyline op-line-scale="1.500" pts="3500,700,3300,700,"/>
+<polyline op-line-scale="1.500" pts="3500,600,3500,700,"/>
+<polyline op-line-scale="1.500" pts="3900,600,3500,600,"/>
+<text x="450" y="751" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<polyline op-lw="3" op-lc="255" pts="2699,499,2700,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<text x="1550" y="460" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">Start
+bit</text>
+<text x="1249" y="440" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">Parity</text>
+<text x="2351" y="440" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">Parity</text>
+<text x="3450" y="440" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">Parity</text>
+<text x="1401" y="460" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">Stop
+bits</text>
+<text x="2501" y="460" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">Stop
+bits</text>
+<text x="3601" y="460" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">Stop
+bits</text>
+<text x="161" y="600" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">5V</text>
+<text x="161" y="700" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">0V</text>
+<text x="561" y="880" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">LSB</text>
+<text x="1141" y="880" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">MSB</text>
+<text x="950" y="1051" f="200,1,0,0,Lucida Sans Unicode,000000" al="9">D</text>
+<text x="2050" y="1050" f="200,1,0,0,Lucida Sans Unicode,000000" al="9">e</text>
+<text x="3150" y="1050" f="200,1,0,0,Lucida Sans Unicode,000000" al="9">2</text>
+<polyline op-lw="3" op-at="13" arrow_scale_x="3.0000" arrow_scale_y="3.0000" pts="1460,1000,440,1000,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-at="13" arrow_scale_x="3.0000" arrow_scale_y="3.0000" pts="2560,1000,1540,1000,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-at="13" arrow_scale_x="3.0000" arrow_scale_y="3.0000" pts="3660,1000,2640,1000,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<text x="450" y="440" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">Start
+bit</text>
+<text x="2650" y="460" f="100,1,0,0,Lucida Sans Unicode,000000" al="9">Start
+bit</text>
+<polyline op-lw="3" op-lc="255" pts="2599,499,2600,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="2399,499,2400,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="2299,499,2300,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="1599,499,1600,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="1299,499,1300,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="1199,499,1200,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="3399,499,3400,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="3499,499,3500,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="3699,499,3700,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="499,499,500,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="400,500,400,800,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="255" pts="1500,500,1500,820,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<text x="550" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="650" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="750" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="849" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="949" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="1049" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="1150" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="1250" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="1350" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="1450" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="1549" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="1650" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="1850" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="1749" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="1949" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="2049" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="2150" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="2250" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="2350" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="2450" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="2550" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="2649" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="2850" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="3150" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="3250" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="2749" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="2949" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="3049" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="3349" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="3449" y="749" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">0</text>
+<text x="3550" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<text x="3650" y="750" f="180,1,0,0,Lucida Sans Unicode,000000" l="1" al="9">1</text>
+<polyline op-lw="3" op-lc="16763904" pts="399,599,400,1000,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="16763904" pts="1499,599,1500,1000,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="16763904" pts="2599,599,2600,1000,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+<polyline op-lw="3" op-lc="16763904" pts="3699,599,3700,1000,">
+<op-lt head="čárkovaná (.5x), _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" body="A,.25,-.125"/>
+</polyline>
+</layer>
+</layers>
+</page>
+</pages>
+</document>
