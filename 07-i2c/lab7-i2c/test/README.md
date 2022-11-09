@@ -3,14 +3,14 @@
 ### Arduino Uno pinout
 
 1. In the picture of the Arduino Uno board, mark the pins that can be used for the following functions/operations:
-   * PWM generators from Timer0, Timer1, Timer2
-   * analog channels for ADC
-   * UART pins
-   * I2C pins
-   * SPI pins
-   * external interrupt pins INT0, INT1
+   * **PWM generators from Timer0, Timer1, Timer2**:  **3, 5, 6, 9, 10, 11**
+   * analog channels for **ADC**                      **A0, A1, A2, A3, A4, A5**
+   * **UART** pins                                    **TX => (1), RX <= (0)**
+   * **I2C** pins                                     **SCL, SDA**
+   * **SPI** pins                                     **10, 11, 12, 13**
+   * external interrupt pins **INT0, INT1**           **2, 3**
 
-   ![your figure](images/arduino_uno_pinout.png)
+   ![your figure](https://github.com/xsedla1y/digital-electronics-2/blob/main/07-i2c/07-photos/ArduinoUNO_pinout.png)
 
 ### I2C communication
 
