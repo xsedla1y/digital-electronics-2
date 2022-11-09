@@ -116,7 +116,7 @@ ISR(ADC_vect)
     // Note that, register pair ADCH and ADCL can be read as a 16-bit value ADC
     value = ADC;
     // Convert "value" to "string" and display it
-    itoa(value, string, 2);
+    itoa(value, string, 10);
     lcd_gotoxy(8, 0);
     lcd_puts("    ");
     lcd_gotoxy(8, 0);
@@ -134,19 +134,24 @@ ISR(ADC_vect)
     // down: 257
     // up: 100
     // right: 0
+
+    itoa(value, string, 10);
+    // Converting a numeric string
+    int x = atoi(string);
+
     lcd_gotoxy(8, 1);
     lcd_puts("      ");
     lcd_gotoxy(8, 1);
-    if (string > 830)
+    if (x > 830)
         lcd_puts("none");
-    else if (string > 520)
+    else if (x > 520)
         lcd_puts("Select");
-    else if (string > 330)
+    else if (x > 330)
         lcd_puts("Left");
-    else if (string > 180)
+    else if (x > 180)
         lcd_puts("Down");
-    else if (string > 50)
+    else if (x > 50)
         lcd_puts("Up");
     else
-      lcd_puts("Down");
+      lcd_puts("Right");
 }
