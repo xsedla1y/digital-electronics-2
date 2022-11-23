@@ -1,0 +1,45 @@
+<circuit version="1.0.0-RC3" rev="1148" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="KY040" CircId="KY040-1" mainComp="false" Show_id="false" Show_Val="false" Pos="676,176" rotation="90" hflip="1" vflip="1" label="KY040-1" idLabPos="-34,20" labelrot="-90" valLabPos="-16,20" valLabRot="0" Steps="20 _Steps" />
+
+<item itemtype="Hd44780" CircId="Hd44780-2" mainComp="false" Show_id="true" Show_Val="false" Pos="272,200" rotation="0" hflip="1" vflip="1" label="Hd44780-2" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2 _Rows" Cols="16 _Columns" />
+
+<item itemtype="Ground" CircId="Ground-10" mainComp="false" Show_id="false" Show_Val="false" Pos="240,308" rotation="0" hflip="1" vflip="1" label="Ground-10" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="MCU" CircId="mega328-37" mainComp="false" Show_id="true" Show_Val="false" Pos="448,272" rotation="0" hflip="1" vflip="1" label="mega328-37" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="D:/Documents/xsedla1y/digital-electronics-2/Project1/.pio/build/uno/firmware.hex" Auto_Load="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Resistor" CircId="Resistor-54" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="620,164" rotation="0" hflip="1" vflip="1" label="Resistor-54" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-56" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="592,172" rotation="0" hflip="1" vflip="1" label="Resistor-56" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-57" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="560,180" rotation="0" hflip="1" vflip="1" label="Resistor-57" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="KY023" CircId="KY023-69" mainComp="false" Show_id="false" Show_Val="false" Pos="676,224" rotation="90" hflip="1" vflip="1" label="KY023-69" idLabPos="-34,20" labelrot="-90" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Ground-10-Gnd" endpinid="Hd44780-2-PinRW" pointList="240,292,240,264,296,264,296,208" />
+
+<item itemtype="Connector" uid="Connector-38" startpinid="Hd44780-2-dataPin4" endpinid="mega328-37-PORTD4" pointList="344,208,344,320,440,320" />
+
+<item itemtype="Connector" uid="Connector-39" startpinid="Hd44780-2-dataPin5" endpinid="mega328-37-PORTD5" pointList="352,208,352,360,440,360" />
+
+<item itemtype="Connector" uid="Connector-40" startpinid="Hd44780-2-dataPin6" endpinid="mega328-37-PORTD6" pointList="360,208,360,368,440,368" />
+
+<item itemtype="Connector" uid="Connector-41" startpinid="Hd44780-2-dataPin7" endpinid="mega328-37-PORTD7" pointList="368,208,368,376,440,376" />
+
+<item itemtype="Connector" uid="Connector-42" startpinid="Hd44780-2-PinEn" endpinid="mega328-37-PORTB1" pointList="304,208,304,404,492,404,492,384,488,384" />
+
+<item itemtype="Connector" uid="Connector-43" startpinid="Hd44780-2-PinRS" endpinid="mega328-37-PORTB0" pointList="288,208,288,384,440,384" />
+
+<item itemtype="Connector" uid="Connector-58" startpinid="Resistor-54-lPin" endpinid="mega328-37-PORTB2" pointList="604,164,508,164,508,376,488,376" />
+
+<item itemtype="Connector" uid="Connector-59" startpinid="Resistor-56-lPin" endpinid="mega328-37-PORTD3" pointList="576,172,516,172,516,244,420,244,420,312,440,312" />
+
+<item itemtype="Connector" uid="Connector-60" startpinid="KY040-1-dt" endpinid="Resistor-56-rPin" pointList="640,172,608,172" />
+
+<item itemtype="Connector" uid="Connector-62" startpinid="KY040-1-clk" endpinid="Resistor-57-rPin" pointList="640,180,576,180" />
+
+<item itemtype="Connector" uid="Connector-63" startpinid="Resistor-57-lPin" endpinid="mega328-37-PORTD2" pointList="544,180,524,180,524,252,428,252,428,304,440,304" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="Resistor-54-rPin" endpinid="KY040-1-sw" pointList="636,164,640,164" />
+
+</circuit>
