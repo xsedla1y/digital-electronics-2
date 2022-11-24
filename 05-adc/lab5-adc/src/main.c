@@ -109,7 +109,6 @@ ISR(TIMER1_OVF_vect)
 ISR(ADC_vect)
 {
     uint16_t value;
-    uint16_t value2;
     char string[4];  // String for converted numbers by itoa()
 
     // Read converted value
