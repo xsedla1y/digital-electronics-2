@@ -26,9 +26,9 @@
 #define LED2 PB3
 #define LED3 PB4
 #define LED4 PB5
-#define LED5 PB6
-//#define LED6 PC4
-//#define LED7 PC5
+#define LED5 PC3
+#define LED6 PC4
+#define LED7 PC5
 
 // ENCODER
 #define OutputCLK PD1
@@ -36,7 +36,7 @@
 #define OutputSW PD3
 
 // JOYSTICK
-#define OutputSWJ PB7
+#define OutputSWJ PC2
 // X-AXIS PC0
 // Y-AXIS PC1
 
@@ -67,19 +67,19 @@ int main(void)
     GPIO_mode_output(&DDRB,LED2);
     GPIO_mode_output(&DDRB,LED3);
     GPIO_mode_output(&DDRB,LED4);
-    GPIO_mode_output(&DDRB,LED5);
- //   GPIO_mode_output(&DDRC,LED4);
- //   GPIO_mode_output(&DDRC,LED5);
+    GPIO_mode_output(&DDRC,LED5);
+    GPIO_mode_output(&DDRC,LED6);
+    GPIO_mode_output(&DDRC,LED7);
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Configure Analog-to-Digital Convertion unit
     // Select ADC voltage reference to "AVcc with external capacitor at AREF pin"
     ADMUX = ADMUX | (1<<REFS0);
-    // Select input channel ADC0 (voltage divider pin)
+    // Select input channel ADC0 & ADC1 (voltage divider pin)
     ADMUX = ADMUX & ~( 1<<MUX3 | 1<<MUX2 | 1<<MUX0 | 1<<MUX1);
+    ADMUX &= ~((1<<MUX3 | 1<<MUX2 | 1<<MUX1)); ADMUX |= (1<<MUX0);
     // Enable ADC module
     ADCSRA |= (1<<ADEN);
-
     // Enable conversion complete interrupt
     ADCSRA |= (1<<ADIE);
     // Set clock prescaler to 128
@@ -144,6 +144,7 @@ button = GPIO_read(&PIND,OutputSW);
         lcd_gotoxy(8, 0);
         lcd_puts(string);
     }
+
 }
 
 
@@ -154,6 +155,7 @@ button = GPIO_read(&PIND,OutputSW);
  * Function: Timer/Counter1 overflow interrupt
  * Purpose:  Use single conversion mode and start conversion every 100 ms.
  **********************************************************************/
+
 ISR(TIMER1_OVF_vect)
 {
     // Start ADC conversion
@@ -161,8 +163,8 @@ ISR(TIMER1_OVF_vect)
   nooverflow++;
   if(nooverflow > 6)
   {
-    nooverflow = 0;
-    ADCSRA |= (1<<ADSC);
+  nooverflow = 0;
+  ADCSRA |= (1<<ADSC);
   }
   
 }
@@ -174,72 +176,91 @@ ISR(TIMER1_OVF_vect)
 ISR(ADC_vect)
 {
   uint16_t value;
-  //char string[4];  // String for converted numbers by itoa()
+  char string[4];  // String for converted numbers by itoa()
 
     // Read converted value
     // Note that, register pair ADCH and ADCL can be read as a 16-bit value ADC
   value = ADC;
     // Convert "value" to "string" and display it
 
-  lcd_gotoxy(13,0);
-  lcd_puts("KOK");
+  itoa(value, string, 10);
+  lcd_gotoxy(0,1);
+  lcd_puts("    ");
+  lcd_gotoxy(0,1);
+  lcd_puts(string);
 
   GPIO_write_high(&PORTB,LED1);
   GPIO_write_high(&PORTB,LED2);
   GPIO_write_high(&PORTB,LED3);
   GPIO_write_high(&PORTB,LED4);
-  GPIO_write_high(&PORTB,LED5);
+  GPIO_write_high(&PORTC,LED5);
+  GPIO_write_high(&PORTC,LED6);
+  GPIO_write_high(&PORTC,LED7);
 
   if(value > 800)
   {
-    GPIO_write_low(&PORTB,LED5);
-    GPIO_write_low(&PORTB,LED4);
-    GPIO_write_low(&PORTB,LED3);
-    GPIO_write_low(&PORTB,LED2);
-    GPIO_write_low(&PORTB,LED1);
+    GPIO_write_low(&PORTC,LED7);
     lcd_gotoxy(8, 1);
     lcd_puts("      ");
     lcd_gotoxy(8, 1);
-    lcd_puts("none");
+    lcd_puts("LED_7");
     
+  }
+  else if (value > 700)
+  {
+    GPIO_write_low(&PORTC,LED6);
+    lcd_gotoxy(8, 1);
+    lcd_puts("      ");
+    lcd_gotoxy(8, 1);
+    lcd_puts("LED_6");
   }
   else if (value > 600)
   {
-    GPIO_write_low(&PORTB,LED4);
-    GPIO_write_low(&PORTB,LED3);
-    GPIO_write_low(&PORTB,LED2);
-    GPIO_write_low(&PORTB,LED1);
+    GPIO_write_low(&PORTC,LED5);
     lcd_gotoxy(8, 1);
     lcd_puts("      ");
     lcd_gotoxy(8, 1);
-    lcd_puts("select");
+    lcd_puts("LED_5");
+  }
+  else if (value > 500)
+  {
+    GPIO_write_low(&PORTB,LED4);
+    lcd_gotoxy(8, 1);
+    lcd_puts("      ");
+    lcd_gotoxy(8, 1);
+    lcd_puts("LED_4");
   }
   else if (value > 400)
   {
     GPIO_write_low(&PORTB,LED3);
-    GPIO_write_low(&PORTB,LED2);
-    GPIO_write_low(&PORTB,LED1);
     lcd_gotoxy(8, 1);
     lcd_puts("      ");
     lcd_gotoxy(8, 1);
-    lcd_puts("left");
+    lcd_puts("LED_3");
+  }
+  else if (value > 300)
+  {
+    GPIO_write_low(&PORTB,LED2);
+    lcd_gotoxy(8, 1);
+    lcd_puts("      ");
+    lcd_gotoxy(8, 1);
+    lcd_puts("LED_2");
   }
   else if (value > 200)
   {
-    GPIO_write_low(&PORTB,LED2);
     GPIO_write_low(&PORTB,LED1);
     lcd_gotoxy(8, 1);
     lcd_puts("      ");
     lcd_gotoxy(8, 1);
-    lcd_puts("down");
+    lcd_puts("LED_1");
   }
-  else if (value > 0)
+  else if (value > 100)
   {
     GPIO_write_low(&PORTB,LED1);
     lcd_gotoxy(8, 1);
     lcd_puts("      ");
     lcd_gotoxy(8, 1);
-    lcd_puts("up");
+    lcd_puts("OFF");
   }
   
 }
