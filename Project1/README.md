@@ -3,14 +3,14 @@
 Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder, and Digilent PmodCLP LCD module.
 
 
-## Členové týmu
+## Team members
 
-* Josef Komár 230271 (Zodpovědný za: program enkodéru, řízení LED a jejich blikání, video )
-* Ondřej Sedlák 230312 (Zodpovědný za: program pro joystick, celková kompletace programu a odlazení, github dokumentace)
+* Josef Komár 230271 (Responsible for: encoder program, control of LEDs and their flashing, video)
+* Ondřej Sedlák 230312 (Responsible for: joystick program, overall program completion and debugging, github documentation)
 
-## Popis hardwaru
+## Hardware description
 
-V našem projektu byla použita deska Arduino UNO, která je založená na AVR čipu ATMEGA328P. Dále jsou použity externí součástky, jako je např. analogový joystick, rotary enkodér, LCD displej keysight a 7 různých LED diod.
+In our project we use the Arduino UNO board, which is based on the ATMEGA328P AVR chip. External components are also used, such as an analog joystick, a rotary encoder, an agilent LCD display and 7 different colored LEDs.
 
 ![arduino uno pinout](images/arduino_pinout.png)
 
@@ -29,9 +29,9 @@ To interface the Analog Joystick with Arduino Uno, we need to use ADC on the mic
 
 
 
-## Popis softwaru
+## Software description
 
-Při psaní kódu jsme využili hned několik knihoven vytvořených v PC cvičeních. Např. timer, gpio a lcd.
+In the code we used several libraries created in school computer exercises, e.g. timer, gpio and lcd.
 
 Put flowchats of your algorithm(s). Write descriptive text of your libraries and source files. Put direct links to these files in `src` or `lib` folders.
 
@@ -39,9 +39,9 @@ Put flowchats of your algorithm(s). Write descriptive text of your libraries and
 
 Insert a link to a short video with your practical implementation example (1-3 minutes, e.g. on YouTube).
 
-## Zdroje
+## References
 
-1. https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/
-2. https://docs.arduino.cc/hardware/uno-rev3
-3. https://docs.arduino.cc/static/581ef7a3be69646a3f9eb4f6e2575548/A000066-datasheet.pdf
-4. https://www.electronicwings.com/arduino/analog-joystick-interfacing-with-arduino-uno
+1. [Rotary encoder in Arduino](https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/)
+2. [Arduino Uno pinout](https://docs.arduino.cc/hardware/uno-rev3)
+3. [Arduino Uno datasheet](https://docs.arduino.cc/static/581ef7a3be69646a3f9eb4f6e2575548/A000066-datasheet.pdf)
+4. [Joystick in Arduino](https://www.electronicwings.com/arduino/analog-joystick-interfacing-with-arduino-uno)
