@@ -27,7 +27,9 @@ To interface the Analog Joystick with Arduino Uno, we need to use ADC on the mic
 
 ![analog joy-stick](images/joystick.jpg)
 
+### SimulIDE simulation
 
+![schema_simulide](images/schema_simullde.png)
 
 ## Software description
 
