@@ -136,9 +136,9 @@ ISR(TIMER1_OVF_vect)
       lcd_puts(string);
   }
 
-aLastState = aState;
+  aLastState = aState;
 
-button = GPIO_read(&PIND,OutputSW);
+  button = GPIO_read(&PIND,OutputSW);
 
     if (button == 0){
 
