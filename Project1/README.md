@@ -5,8 +5,8 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 
 ## Team members
 
-* Josef Komár 230271 (Responsible for: encoder program, control of LEDs and their flashing, video)
-* Ondřej Sedlák 230312 (Responsible for: joystick program, overall program completion and debugging, github documentation)
+   * Josef Komár 230271 (Responsible for: encoder program, control of LEDs and their flashing, video)
+   * Ondřej Sedlák 230312 (Responsible for: joystick program, overall program completion and debugging, github documentation)
 
 ## Hardware description
 
@@ -36,6 +36,40 @@ To interface the Analog Joystick with Arduino Uno, we need to use ADC on the mic
 In the code we used several libraries created in school computer exercises, e.g. timer, gpio and lcd.
 
 Put flowchats of your algorithm(s). Write descriptive text of your libraries and source files. Put direct links to these files in `src` or `lib` folders.
+
+### Source files & libraries
+
+ 1. **Timer:** [timer.h](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project1/include/timer.h)
+ 2. **Gpio:** [gpio.c](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project1/lib/gpio/gpio.c), [gpio.h](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project1/lib/gpio/gpio.h)
+ 3. **LCD:** [lcd.c](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project1/lib/lcd/lcd.c), [lcd.h](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project1/lib/lcd/lcd.h), [lcd_definitions.h](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project1/lib/lcd/lcd_definitions.h)
+ 4. **Source:** [main.c](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project1/src/main.c)
+
+  The final project structure looks like this:
+   ```c
+   ├── include
+   │   └── timer.h
+   ├── lib
+   │   └── gpio
+   │       ├── gpio.c
+   │       └── gpio.h
+   |   └── lcd
+   │       ├── lcd.c
+   │       ├── lcd.h
+   │       └── lcd_definitions.h
+   └── src
+       └── main.c
+   ```
+
+### Software flowcharts
+
+#### Encoder algorithm
+![diagram_encoder](images/project_encoder.png)
+
+#### Joystick algorithm
+![diagram_joystick](images/project_joystick.png)
+
+#### LEDs algorithm
+![diagram_LEDs](images/project_LEDS.png)
 
 ## Video
 
