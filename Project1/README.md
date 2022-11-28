@@ -63,13 +63,13 @@ Put flowchats of your algorithm(s). Write descriptive text of your libraries and
 ### Software flowcharts
 
 #### Encoder algorithm
-![diagram_encoder](images/project_encoder.png)
+![diagram_encoder](images/project_encoder.svg)
 
 #### Joystick algorithm
-![diagram_joystick](images/project_joystick.png)
+![diagram_joystick](images/project_joystick.svg)
 
 #### LEDs algorithm
-![diagram_LEDs](images/project_LEDS.png)
+![diagram_LEDs](images/project_LEDS.svg)
 
 ## Video
 
