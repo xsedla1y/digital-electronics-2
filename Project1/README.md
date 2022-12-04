@@ -14,6 +14,12 @@ In our project we use the Arduino UNO board, which is based on the ATMEGA328P AV
 
 ![arduino uno pinout](images/arduino_pinout.png)
 
+### LCD display
+
+In labs we are using this type of LCD display. Documentations can be found in references.
+
+![LCD display PMOD CLP](images/pmod_clp.png)
+
 ### Rotary encoder
 
 A rotary encoder is a type of position sensor which is used for determining the angular position of a rotating shaft. It generates an electrical signal, either analog or digital, according to the rotational movement.
@@ -27,15 +33,19 @@ To interface the Analog Joystick with Arduino Uno, we need to use ADC on the mic
 
 ![analog joy-stick](images/joystick.jpg)
 
-### SimulIDE simulation
+## SimulIDE simulation
+
+Simulation can be done in SimulIDE V.1.0.0
+For simulation purposes the timer needs to be changed. We've already created "hex" file, that You can upload to Arduino Uno board in SimulIDE.
+
+**Firmware:** [firmware.hex](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project1/Project1_simulations/firmware.rar) <br/>
+**SimulIDE template:** [project1_new.sim1](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project1/Project1_simulations/project1_new.sim1)
 
 ![schema_simulide](images/schema_simulide.png)
 
 ## Software description
 
 In the code we used several libraries created in school computer exercises, e.g. timer, gpio and lcd.
-
-Put flowchats of your algorithm(s). Write descriptive text of your libraries and source files. Put direct links to these files in `src` or `lib` folders.
 
 ### Source files & libraries
 
@@ -81,3 +91,4 @@ Put flowchats of your algorithm(s). Write descriptive text of your libraries and
 2. [Arduino Uno pinout](https://docs.arduino.cc/hardware/uno-rev3)
 3. [Arduino Uno datasheet](https://docs.arduino.cc/static/581ef7a3be69646a3f9eb4f6e2575548/A000066-datasheet.pdf)
 4. [Joystick in Arduino](https://www.electronicwings.com/arduino/analog-joystick-interfacing-with-arduino-uno)
+5. [LCD display](https://www.tme.eu/en/details/410-142p/add-on-boards/digilent/pmodclp/)
