@@ -73,7 +73,7 @@ Put flowchats of your algorithm(s). Write descriptive text of your libraries and
 
 ## Video
 
-Insert a link to a short video with your practical implementation example (1-3 minutes, e.g. on YouTube).
+[Link to a short video of our practical implementation](https://www.youtube.com/watch?v=qSR6gQtcMVg)
 
 ## References
 
