@@ -5,8 +5,8 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 
 ## Team members
 
-   * Josef Komár 230271 (Responsible for: encoder program, control of LEDs and their flashing, video)
-   * Ondřej Sedlák 230312 (Responsible for: joystick program, overall program completion and debugging, github documentation)
+   * Josef Komár 230271 (Responsible for: encoder program, control of LEDs and their flashing, video, flowcharts)
+   * Ondřej Sedlák 230312 (Responsible for: joystick program, overall program completion and debugging, github documentation, SimulIDE)
 
 ## Hardware description
 
