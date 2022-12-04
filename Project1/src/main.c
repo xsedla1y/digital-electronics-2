@@ -83,7 +83,7 @@ int main(void)
     ADCSRA |= (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
     // Configure 16-bit Timer/Counter1 to start ADC conversion
     // Set prescaler to 33 ms and enable overflow interrupt
-    TIM1_overflow_33ms();
+    TIM1_overflow_4ms();
     TIM1_overflow_interrupt_enable();
     TIM0_overflow_16ms();
     TIM0_overflow_interrupt_enable();
@@ -104,7 +104,7 @@ int main(void)
 
 ISR(TIMER0_OVF_vect)
 {
-  ADCSRA |= (1<<ADSC);
+
   char string[4];
   aState = GPIO_read(&PINC,OutputCLK);
 
@@ -157,7 +157,7 @@ ISR(TIMER0_OVF_vect)
 ISR(TIMER1_OVF_vect)
 {
   /* ADC conversion */
-  //  ADCSRA |= (1<<ADSC);
+  ADCSRA |= (1<<ADSC);
 }
 
 
