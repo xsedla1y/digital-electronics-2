@@ -29,12 +29,12 @@ The goal of the project is cooperation in pairs, further study of the topic, des
 
 ### Team members
 
-* Member 1 (responsible for xxx)
-* Member 2 (responsible for xxx)
+* Josef Komár 230271 (responsible for xxx)
+* Ondřej Sedlák 230312 (responsible for xxx)
 
 ## Hardware description
 
-Insert descriptive text and schematic(s) of your implementation.
+In our project we use the Arduino UNO board, which is based on the ATMEGA328P AVR chip. External components are also used, such as two servo motors SG90,  an analog joystick and an agilent LCD display.
 
 ## Software description
 
