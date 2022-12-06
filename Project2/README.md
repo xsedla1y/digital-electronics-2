@@ -1,4 +1,4 @@
-# Project 2
+# Project 2 - Analog joy-stick, 2 servo motors and LCD display
 
 Precise generation of several PWM channels. Application of two (or more) Servo motors SG90.
 
