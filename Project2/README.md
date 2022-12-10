@@ -70,14 +70,12 @@ In the code we used several libraries created in school computer exercises, e.g.
 
 ### Software flowcharts
 
-#### Encoder algorithm
-![diagram_for 2 servos](images/project_2servos.svg)
+#### Timer0 algorithm
+![diagram of Timer0](images/timer0.svg)
 
-#### Joystick algorithm
-![diagram_joystick](images/project_joystick.svg)
+#### Joystick and 2 servos algorithm
+![Joystick&2Servos](images/project_joystickservo.svg)
 
-#### LEDs algorithm
-![diagram_LEDs](images/project_LEDS.svg)
 
 ## Video
 
