@@ -1,7 +1,6 @@
 # Project 2 - Analog joy-stick, 2 servo motors and LCD display
 
-Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder, and Digilent PmodCLP LCD module.
-
+Application of analog joy-stick (2 ADC channels, 1 push button), 2 SG90 Micro Servos and Digilent PmodCLP LCD module.
 
 ## Team members
 
@@ -10,7 +9,7 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 
 ## Hardware description
 
-In our project we use the Arduino UNO board, which is based on the ATMEGA328P AVR chip. External components are also used, such as an analog joystick, a rotary encoder, an agilent LCD display and 7 different colored LEDs.
+In our project we use the Arduino UNO board, which is based on the ATMEGA328P AVR chip. We're using some external components: joystick and two SG90 servos. Joystick is connected into the analog terminal and operates these servos via A/D conversion - it switches output terminals and changes the duty cycle of the PWM signals.
 
 ![arduino uno pinout](images/arduino_pinout.png)
 
@@ -26,6 +25,11 @@ Analog joystick produces two voltages; one corresponding to position with respec
 To interface the Analog Joystick with Arduino Uno, we need to use ADC on the microcontroller of the Arduino UNO board.
 
 ![analog joy-stick](images/joystick.jpg)
+
+### SG90 Micro Servo
+
+
+![SG90_micro_servo](images/SG90_micro_servo.jpg)
 
 ## SimulIDE simulation
 
@@ -67,7 +71,7 @@ In the code we used several libraries created in school computer exercises, e.g.
 ### Software flowcharts
 
 #### Encoder algorithm
-![diagram_encoder](images/project_encoder.svg)
+![diagram_for 2 servos](images/project_2servos.svg)
 
 #### Joystick algorithm
 ![diagram_joystick](images/project_joystick.svg)
