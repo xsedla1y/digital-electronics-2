@@ -33,7 +33,7 @@ Simulation can be done in SimulIDE V.1.0.0
 For simulation purposes the timer needs to be changed. We've already created "hex" file, that You can upload to Arduino Uno board in SimulIDE.
 
 **Firmware:** [firmware.hex](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/Project2_simulations/firmware.rar) <br/>
-**SimulIDE template:** [project2_new.sim1](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/Project2_simulations/project2_new.sim1)
+**SimulIDE template:** [project2.sim1](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/Project2_simulations/project2.sim1)
 
 ![schema_simulide](images/schema_simulide.png)
 
