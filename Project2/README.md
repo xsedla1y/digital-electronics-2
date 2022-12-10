@@ -45,7 +45,7 @@ In the code we used several libraries created in school computer exercises, e.g.
 
  1. **Timer:** [timer.h](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/include/timer.h)
  2. **Gpio:** [gpio.c](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/lib/gpio/gpio.c), [gpio.h](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/lib/gpio/gpio.h)
- 3. **LCD:** [lcd.c](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/lib/lcd/lcd.c), [lcd.h](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/lib/lcd/lcd.h), [lcd_definitions.h](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/lib/lcd/lcd_definitions.h)
+ 3. **LCD:** [lcd.c](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/lib/lcd/lcd.c), [lcd.h](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/lib/lcd/lcd.h), [**lcd_definitions.h (modified)**](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/lib/lcd/lcd_definitions.h)
  4. **Source:** [main.c](https://github.com/xsedla1y/digital-electronics-2/blob/main/Project2/src/main.c)
 
   The final project structure looks like this:
@@ -59,7 +59,7 @@ In the code we used several libraries created in school computer exercises, e.g.
    |   └── lcd
    │       ├── lcd.c
    │       ├── lcd.h
-   │       └── lcd_definitions.h
+   │       └── lcd_definitions.h //(modified LCD connections)
    └── src
        └── main.c
    ```
@@ -77,11 +77,11 @@ In the code we used several libraries created in school computer exercises, e.g.
 
 ## Video
 
-[Link to a short video of our practical implementation](https://www.youtube.com/watch?v=qSR6gQtcMVg)
+[Link to a short video of our practical implementation of Project2]()
 
 ## References
 
-1. [Rotary encoder in Arduino](https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/)
+1. [SG90 Micro Servo](https://www.kjell.com/globalassets/mediaassets/701916_87897_datasheet_en.pdf?ref=4287817A7A)
 2. [Arduino Uno pinout](https://docs.arduino.cc/hardware/uno-rev3)
 3. [Arduino Uno datasheet](https://docs.arduino.cc/static/581ef7a3be69646a3f9eb4f6e2575548/A000066-datasheet.pdf)
 4. [Joystick in Arduino](https://www.electronicwings.com/arduino/analog-joystick-interfacing-with-arduino-uno)
