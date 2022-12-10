@@ -12,9 +12,9 @@
 
 <item itemtype="KY023" CircId="KY023-57" mainComp="false" Show_id="false" Show_Val="false" Pos="924,352" rotation="0" hflip="1" vflip="1" label="KY023-57" idLabPos="-34,20" labelrot="-90" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Probe" CircId="Probe-116" mainComp="false" Show_id="false" Show_Val="true" Pos="936,400" rotation="-45" hflip="1" vflip="1" label="Probe-116" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+<item itemtype="Probe" CircId="Probe-116" mainComp="false" Show_id="false" Show_Val="true" Pos="864,436" rotation="-45" hflip="1" vflip="1" label="Probe-116" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
 
-<item itemtype="Probe" CircId="Probe-117" mainComp="false" Show_id="false" Show_Val="true" Pos="928,436" rotation="-45" hflip="1" vflip="1" label="Probe-117" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+<item itemtype="Probe" CircId="Probe-117" mainComp="false" Show_id="false" Show_Val="true" Pos="824,444" rotation="-45" hflip="1" vflip="1" label="Probe-117" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
 
 <item itemtype="Servo" CircId="Servo-142" mainComp="false" Show_id="true" Show_Val="false" Pos="972,516" rotation="0" hflip="1" vflip="1" label="Servo-142" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Speed="0.2 _sec/60º" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" />
 
@@ -28,48 +28,46 @@
 
 <item itemtype="Node" CircId="Node-254" mainComp="false" Pos="828,660" />
 
-<item itemtype="Connector" uid="connector-226" startpinid="Hd44780-5-PinRW" endpinid="Ground-10-Gnd" pointList="412,340,412,392,440,392" />
+<item itemtype="Connector" uid="connector-255" startpinid="Hd44780-5-PinRW" endpinid="Ground-10-Gnd" pointList="412,340,412,392,440,392" />
 
-<item itemtype="Connector" uid="connector-227" startpinid="KY023-57-vrx" endpinid="Uno-3-A0" pointList="912,388,912,460,732,460" />
+<item itemtype="Connector" uid="connector-256" startpinid="KY023-57-vrx" endpinid="Uno-3-A0" pointList="912,388,912,460,732,460" />
 
-<item itemtype="Connector" uid="connector-228" startpinid="KY023-57-vry" endpinid="Uno-3-A1" pointList="920,388,920,452,732,452" />
+<item itemtype="Connector" uid="connector-257" startpinid="KY023-57-vry" endpinid="Uno-3-A1" pointList="920,388,920,452,732,452" />
 
-<item itemtype="Connector" uid="connector-229" startpinid="Hd44780-5-dataPin4" endpinid="Uno-3-A5" pointList="460,340,460,380,764,380,764,420,732,420" />
+<item itemtype="Connector" uid="connector-258" startpinid="Hd44780-5-dataPin4" endpinid="Uno-3-A5" pointList="460,340,460,380,764,380,764,420,732,420" />
 
-<item itemtype="Connector" uid="connector-230" startpinid="Hd44780-5-dataPin5" endpinid="Uno-3-A4" pointList="468,340,468,372,772,372,772,428,732,428" />
+<item itemtype="Connector" uid="connector-259" startpinid="Hd44780-5-dataPin5" endpinid="Uno-3-A4" pointList="468,340,468,372,772,372,772,428,732,428" />
 
-<item itemtype="Connector" uid="connector-231" startpinid="Hd44780-5-dataPin6" endpinid="Uno-3-A3" pointList="476,340,476,364,780,364,780,436,732,436" />
+<item itemtype="Connector" uid="connector-260" startpinid="Hd44780-5-dataPin6" endpinid="Uno-3-A3" pointList="476,340,476,364,780,364,780,436,732,436" />
 
-<item itemtype="Connector" uid="connector-232" startpinid="Hd44780-5-PinRS" endpinid="Uno-3-8" pointList="404,340,404,492,588,492" />
+<item itemtype="Connector" uid="connector-261" startpinid="Hd44780-5-PinRS" endpinid="Uno-3-8" pointList="404,340,404,492,588,492" />
 
-<item itemtype="Connector" uid="connector-233" startpinid="Hd44780-5-PinEn" endpinid="Uno-3-12" pointList="420,340,420,524,588,524" />
+<item itemtype="Connector" uid="connector-262" startpinid="Hd44780-5-PinEn" endpinid="Uno-3-12" pointList="420,340,420,524,588,524" />
 
-<item itemtype="Connector" uid="connector-234" startpinid="Uno-3-GND1" endpinid="Node-164-0" pointList="732,492,884,492" />
+<item itemtype="Connector" uid="connector-263" startpinid="Uno-3-GND1" endpinid="Node-164-0" pointList="732,492,884,492" />
 
-<item itemtype="Connector" uid="connector-235" startpinid="Node-164-2" endpinid="Servo-2-in1" pointList="884,492,884,612,924,612" />
+<item itemtype="Connector" uid="connector-264" startpinid="Node-164-2" endpinid="Servo-2-in1" pointList="884,492,884,612,924,612" />
 
-<item itemtype="Connector" uid="connector-236" startpinid="Node-164-1" endpinid="Servo-142-in1" pointList="884,492,908,492,908,516,924,516" />
+<item itemtype="Connector" uid="connector-265" startpinid="Node-164-1" endpinid="Servo-142-in1" pointList="884,492,908,492,908,516,924,516" />
 
-<item itemtype="Connector" uid="connector-238" startpinid="Hd44780-5-dataPin7" endpinid="Uno-3-A2" pointList="484,340,484,356,788,356,788,444,732,444" />
+<item itemtype="Connector" uid="connector-266" startpinid="Hd44780-5-dataPin7" endpinid="Uno-3-A2" pointList="484,340,484,356,788,356,788,444,732,444" />
 
-<item itemtype="Connector" uid="connector-239" startpinid="KY023-57-sw" endpinid="Uno-3-2" pointList="928,388,928,396,564,396,564,436,588,436" />
+<item itemtype="Connector" uid="connector-268" startpinid="Uno-3-5V0" endpinid="Node-194-0" pointList="732,500,892,500" />
 
-<item itemtype="Connector" uid="connector-240" startpinid="Uno-3-5V0" endpinid="Node-194-0" pointList="732,500,892,500" />
+<item itemtype="Connector" uid="connector-269" startpinid="Node-194-2" endpinid="Servo-142-in0" pointList="892,500,924,500" />
 
-<item itemtype="Connector" uid="connector-241" startpinid="Node-194-2" endpinid="Servo-142-in0" pointList="892,500,924,500" />
+<item itemtype="Connector" uid="connector-270" startpinid="Node-194-1" endpinid="Servo-2-in0" pointList="892,500,892,596,924,596" />
 
-<item itemtype="Connector" uid="connector-242" startpinid="Node-194-1" endpinid="Servo-2-in0" pointList="892,500,892,596,924,596" />
+<item itemtype="Connector" uid="connector-271" startpinid="Uno-3-9" endpinid="Node-222-0" pointList="588,500,548,500,548,668,836,668" />
 
-<item itemtype="Connector" uid="connector-243" startpinid="Uno-3-9" endpinid="Node-222-0" pointList="588,500,548,500,548,668,836,668" />
+<item itemtype="Connector" uid="connector-272" startpinid="Node-222-2" endpinid="Servo-142-in2" pointList="836,668,836,532,924,532" />
 
-<item itemtype="Connector" uid="connector-244" startpinid="Node-222-2" endpinid="Servo-142-in2" pointList="836,668,836,532,924,532" />
+<item itemtype="Connector" uid="connector-273" startpinid="Node-222-1" endpinid="Oscope-174-Pin0" pointList="836,668,856,668,856,688,872,688" />
 
-<item itemtype="Connector" uid="connector-245" startpinid="Node-222-1" endpinid="Oscope-174-Pin0" pointList="836,668,856,668,856,688,872,688" />
+<item itemtype="Connector" uid="connector-274" startpinid="Uno-3-10" endpinid="Node-254-0" pointList="588,508,556,508,556,660,828,660" />
 
-<item itemtype="Connector" uid="connector-237" startpinid="Uno-3-10" endpinid="Node-254-0" pointList="588,508,556,508,556,660,828,660" />
+<item itemtype="Connector" uid="connector-275" startpinid="Node-254-2" endpinid="Servo-2-in2" pointList="828,660,828,628,924,628" />
 
-<item itemtype="Connector" uid="Connector-255" startpinid="Node-254-2" endpinid="Servo-2-in2" pointList="828,660,828,628,924,628" />
-
-<item itemtype="Connector" uid="Connector-256" startpinid="Node-254-1" endpinid="Oscope-174-Pin1" pointList="828,660,828,720,872,720" />
+<item itemtype="Connector" uid="connector-276" startpinid="Node-254-1" endpinid="Oscope-174-Pin1" pointList="828,660,828,720,872,720" />
 
 </circuit>
