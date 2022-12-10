@@ -58,19 +58,19 @@
  * override the default definitions from lcd.h. Add -D_LCD_DEFINITIONS_FILE
  * to the CDEFS section in the Makefile.
  */
-#define LCD_PORT        PORTD
+#define LCD_PORT        PORTC
 #define LCD_DATA0_PORT  LCD_PORT
 #define LCD_DATA1_PORT  LCD_PORT
 #define LCD_DATA2_PORT  LCD_PORT
 #define LCD_DATA3_PORT  LCD_PORT
-#define LCD_DATA0_PIN   PD4  /**< @brief Pin for HD44780 data pin D4 */
-#define LCD_DATA1_PIN   PD5  /**< @brief Pin for HD44780 data pin D5 */
-#define LCD_DATA2_PIN   PD6  /**< @brief Pin for HD44780 data pin D6 */
-#define LCD_DATA3_PIN   PD7  /**< @brief Pin for HD44780 data pin D7 */
+#define LCD_DATA0_PIN   PC5  /**< @brief Pin for HD44780 data pin D4 */
+#define LCD_DATA1_PIN   PC4  /**< @brief Pin for HD44780 data pin D5 */
+#define LCD_DATA2_PIN   PC3  /**< @brief Pin for HD44780 data pin D6 */
+#define LCD_DATA3_PIN   PC2  /**< @brief Pin for HD44780 data pin D7 */
 #define LCD_RS_PORT     PORTB
 #define LCD_RS_PIN      PB0
 #define LCD_E_PORT      PORTB
-#define LCD_E_PIN       PB1
+#define LCD_E_PIN       PB4
 // R/W pin is connected to GND on LCD Keypad Shield
 
 
