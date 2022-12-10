@@ -4,8 +4,8 @@ Application of analog joy-stick (2 ADC channels, 1 push button), 2 SG90 Micro Se
 
 ## Team members
 
-   * Josef Komár 230271 (Responsible for: encoder program, control of LEDs and their flashing, video, flowcharts)
-   * Ondřej Sedlák 230312 (Responsible for: joystick program, overall program completion and debugging, github documentation, SimulIDE)
+   * **Josef Komár 230271** (Responsible for: servo registers, code description, video, flowcharts)
+   * **Ondřej Sedlák 230312** (Responsible for: servo registers, overall program completion and debugging, github documentation, SimulIDE)
 
 ## Hardware description
 
