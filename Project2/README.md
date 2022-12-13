@@ -43,7 +43,8 @@ For simulation purposes the timer needs to be changed. We've already created "he
 
 ## Software description
 
-In the code we used several libraries created in school computer exercises, e.g. timer, gpio and lcd.
+In the code we used several libraries created in school computer exercises, e.g. timer, gpio and lcd.<br/>
+***Note: Original LCD library uses PWM outputs as outputs for display. We had to change the pins in LCD library because of unwanted PWM signal on that ports.***
 
 ### Source files & libraries
 
@@ -79,7 +80,7 @@ In the code we used several libraries created in school computer exercises, e.g.
 
 ## Video
 
-[Link to a short video of our practical implementation of Project2]()
+[Video of our practical implementation of Project2](https://www.youtube.com/watch?v=0iZkW-q4NHg)
 
 ## References
 
