@@ -29,7 +29,7 @@ To interface the Analog Joystick with Arduino Uno, we need to use ADC on the mic
 ### SG90 Micro Servo
 
 
-![SG90_micro_servo](images/SG90_micro_servo.jpg)
+![SG90_micro_servo](images/SG90_micro_servo.png)
 
 ## SimulIDE simulation
 
