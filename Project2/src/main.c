@@ -17,9 +17,9 @@
 
 // Servo default values
 #define Servo_default 1500
-#define Servo_left 800
-#define Servo_right 2200
-#define Servo_step 25
+#define Servo_left 600
+#define Servo_right 2400
+#define Servo_step 50
 
 uint32_t servo1_position = Servo_default;
 uint32_t servo2_position = Servo_default;
