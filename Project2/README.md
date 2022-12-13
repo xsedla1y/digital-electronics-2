@@ -15,7 +15,7 @@ In our project we use the Arduino UNO board, which is based on the ATMEGA328P AV
 
 ### LCD display
 
-In labs we are using this type of LCD display. Documentations can be found in references.
+In labs we are using this type of LCD display. Documentations can be found in references. Pinout can be found in references.
 
 ![LCD display PMOD CLP](images/pmod_clp.png)
 
@@ -88,4 +88,4 @@ In the code we used several libraries created in school computer exercises, e.g.
 2. [Arduino Uno pinout](https://docs.arduino.cc/hardware/uno-rev3)
 3. [Arduino Uno datasheet](https://docs.arduino.cc/static/581ef7a3be69646a3f9eb4f6e2575548/A000066-datasheet.pdf)
 4. [Joystick in Arduino](https://www.electronicwings.com/arduino/analog-joystick-interfacing-with-arduino-uno)
-5. [LCD display](https://www.tme.eu/en/details/410-142p/add-on-boards/digilent/pmodclp/)
+5. [LCD display manual + pinout](https://digilent.com/reference/pmod/pmodclp/start)
